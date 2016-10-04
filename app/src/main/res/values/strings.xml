@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Newsday</string>
+    <string name="title_activity_news_cool_view">NewsCoolView</string>
+</resources>

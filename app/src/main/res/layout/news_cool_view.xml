@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_news_cool_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dodgerblue"
+            />
+        <ProgressBar
+            android:id="@+id/pb_news_cool_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb_news_cool_view"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:progress="0"
+            />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/diyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一"
+            android:layout_gravity="right"
+            android:layout_marginEnd="15dp"
+            android:layout_alignBottom="@+id/pb_news_cool_view"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_news"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
